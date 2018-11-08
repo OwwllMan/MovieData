@@ -1,0 +1,234 @@
+Started GET "/" for 127.0.0.1 at 2018-11-08 08:27:26 +0100
+  
+PG::ConnectionBad (FATAL:  la base de données « MovieDataBase_development » n'existe pas
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (281.7ms)[0m  [1m[35mCREATE DATABASE "MovieDataBase_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (233.0ms)[0m  [1m[35mCREATE DATABASE "MovieDataBase_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-11-08 08:27:44 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 898ms (Views: 893.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 09:01:03 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:08:37 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 202ms (Views: 198.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 15:08:42 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8c0DAmWE/E8qkFQYdCgV8KxbYkwhR3ZgrpmuAUypGamyIHLFdkMwLpbcLBUJNGUsMQuOf0SfBPBDoehyFIPG6w==", "movie"=>"harry", "commit"=>"Valider"}
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::InvalidApiKeyError (Tmdb::InvalidApiKeyError):
+  
+app/services/search_movies.rb:11:in `perform'
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:10:04 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 15:10:07 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wVipk8V6HrCOddLglbt1tgndMc2SYcXToMXheVoXkH+CtdhU1r3S0TI5qu3opwVqlI3d/ve5t0NN/acKAj1PPQ==", "movie"=>"harry", "commit"=>"Valider"}
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::InvalidApiKeyError (Tmdb::InvalidApiKeyError):
+  
+app/services/search_movies.rb:11:in `perform'
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:32:53 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 15:32:56 +0100
+  
+SyntaxError (/home/owl/Bureau/MovieData/app/controllers/movies_controller.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...db.org/3/discover/movie?api_key=91542f7ab4f84212a3f540a81396...
+...                        ^~~~~~~
+/home/owl/Bureau/MovieData/app/controllers/movies_controller.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...1542f7ab4f84212a3f540a81396783f
+...    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/owl/Bureau/MovieData/app/controllers/movies_controller.rb:9: syntax error, unexpected keyword_do_block, expecting keyword_end
+    @movies.each do |movie|
+                 ^~
+/home/owl/Bureau/MovieData/app/controllers/movies_controller.rb:18: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/movies_controller.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/movies_controller.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/movies_controller.rb:9: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/controllers/movies_controller.rb:18: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:33:10 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 15:33:12 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d3tfwxjUNpRLwndDCbGsL/1VLnlavqkcxMF1C6JB4FM0li4ECxP69feOD050rdzzYAXCSj9m24wp+TN4+ms/EQ==", "movie"=>"harry", "commit"=>"Valider"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/owl/Bureau/MovieData/app/services/search_movies.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...db.org/3/discover/movie?api_key=91542f7ab4f84212a3f540a81396...
+...                        ^~~~~~~
+/home/owl/Bureau/MovieData/app/services/search_movies.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...1542f7ab4f84212a3f540a81396783f
+...    ^~~~~~~~~~~~~~~~~~~~~~~~~~~):
+  
+app/services/search_movies.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/services/search_movies.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:34:02 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 15:34:04 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HvMrJ93XipkRO/BTbZtIZpIgpqQqMbY8106wyPSZrw1dHlrgzhBG+K13iF4Qhzi6D3BKl0/pxKw6dva7rLNwTw==", "movie"=>"harry", "commit"=>"Valider"}
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::InvalidApiKeyError (Tmdb::InvalidApiKeyError):
+  
+app/services/search_movies.rb:11:in `perform'
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:36:29 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 15:36:31 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"alm6Iy2zMx0dJPyuPTFWfUAs7jCbsT5IO2/LtFBMMLIptMvkPnT/fKFohKNALSah3XwCA/5pTNjWV43HCGbv8A==", "movie"=>"harry", "commit"=>"Valider"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant SearchMovies::C):
+  
+app/services/search_movies.rb:6:in `<class:SearchMovies>'
+app/services/search_movies.rb:1:in `<main>'
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:36:39 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 15:36:41 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3xb6iMvRr3qHNtFlxOujATWZc/ALJ7X3UCDWuDBPmdGc+4tP2BZjGzt6qWi599PdqMmfw27/x2e9GJDLaGVGkw==", "movie"=>"harry", "commit"=>"Valider"}
+Completed 500 Internal Server Error in 693ms (ActiveRecord: 0.0ms)
+
+
+  
+Tmdb::InvalidApiKeyError (Tmdb::InvalidApiKeyError):
+  
+app/services/search_movies.rb:24:in `perform'
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:36:51 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 15:36:54 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dt3T6+LOCcGGuK6BtUCcBVdgwYgcToi+ym3iufV7QZc1MKIs8QnFoDr01ozIXOzZyjAtu3mW+i4nVaTKrVGe1Q==", "movie"=>"harry", "commit"=>"Valider"}
+Completed 500 Internal Server Error in 422ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for #<Tmdb::Search:0x00007f94b8edc228>):
+  
+app/controllers/movies_controller.rb:8:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 15:41:34 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
