@@ -1,24 +1,38 @@
-# README
+# MovieDatabase Project - fr
+### Production : 
+## 📰 The content
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+i had to create a application with backend and a database.
 
-Things you may want to cover:
+**After cloning the repository, make sure to do :**
 
-* Ruby version
+```sh
+$ cd MovieData
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+```
+This will install all the dependencies needed for the exercises and create the database.
 
-* System dependencies
 
-* Configuration
+## 💎 Gems
 
-* Database creation
+in this project we use : 
 
-* Database initialization
+```sh
+source "https://rubygems.org"
+rails '5.2.1'
+```
 
-* How to run the test suite
+you can find all the gems in the Gemfile in this directory : 
 
-* Services (job queues, cache servers, search engines, etc.)
+MovieData/Gemfile
 
-* Deployment instructions
+## :european_post_office: The Strasbourg Crew 💪
+Done alone @OwwllMan
 
-* ...
+<hr>
+
+***It's an exercise from the TheHackingProject bootcamp.***
+
+***> www.thehackingproject.org***
